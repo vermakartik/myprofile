@@ -120,6 +120,7 @@ a {
     text-transform: uppercase;
     color: #ec407a;
     font-family: 'roboto', sans-serif;
+    text-decoration: none;
 }
 
 .arrow-live{
@@ -136,6 +137,29 @@ a {
 
 .live-button:hover{
     color: #ad1457;
+}
+
+.live-button-disabled{
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'roboto', sans-serif;
+    color: gray;
+}
+
+.live-button-disabled:hover{
+    color: gray;
+    cursor: not-allowed;
+}
+
+.live-button-disabled:hover .arrow-live{
+    left: 6px;
+    color: gray;
+}
+
+.live-button-disabled{
+    color: gray;
 }
 
 .c-tag {
