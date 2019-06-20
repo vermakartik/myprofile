@@ -195,7 +195,16 @@ a {
     color: #ad1457;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 992px){
+    .project-desc{
+        line-height: 1.4em;
+        max-height: 5.6em;
+        height: 5.6em;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     .profile-container{
         float: none;
         margin: auto;
@@ -221,5 +230,22 @@ a {
         height: 240px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .project-desc{
+        font-size: 16px;
+        line-height: 1.4em;
+        max-height: 5.6em;
+        height: 5.6em;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 384px){
+    .project-desc{
+        line-height: 1.4em;
+        max-height: 7.0em;
+        height: 7.0em;
+        font-size: 14px;
     }
 }
