@@ -1,9 +1,28 @@
 .heading-resume {
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mali', cursive;
     text-align: center;
-    font-size: 112px;
+    text-transform: capitalize;
+    font-size: 72px;
+    /* background: #ff77a9; */
     color: #8D6E63;
-    text-shadow: 2px 4px white;
+    border-radius: 16px;
+}
+
+.magic-statement{
+    position: fixed;
+    right: 12px;
+    top: 8px;
+    font-family: Mali, sans-serif;
+    border-radius: 4px;
+    padding: 4px 4px;
+    /* margin-right: 8px; */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    /* color: white; */
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    z-index: 2000;
+    background: linear-gradient(to right, orange, pink);
 }
 
 .section-head {
@@ -114,7 +133,7 @@
     width: 100%;
     max-height: 70%;
     height: 0%;
-    background: #ffee58;
+    background: #fdd835;
     opacity: 0.8;
 }
 
@@ -213,7 +232,7 @@
         font-size: 28px;
         padding-top: 48px !important;
         padding-bottom: 48px !important;
-        text-shadow: 1px 1px white;
+        border-radius: 0px 0px 24px 24px;
     }
 }
 
