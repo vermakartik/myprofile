@@ -1,9 +1,5 @@
-:root {
-    --color-main: rgb(115, 71, 209);
-    --color-mid: rgb(145, 110, 219);
-    --color-sec: rgb(98, 209, 189);
-    --color-nav: rgb(98, 209, 189);
-}
+@import url(theme.css);
+
 *{
      margin: 0px;
      padding: 0px;
@@ -133,6 +129,17 @@ a {
     font-weight: 100;
     font-size: 18px;
     font-family: 'Mali', cursive;
+}
+
+main {
+    background: var(--background-main);
+}
+
+.project-container-main {
+    border-radius: 16px !important;
+    position: relative;
+    overflow: hidden;
+    background: white;
 }
 
 .project-image-container {
