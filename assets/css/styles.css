@@ -316,14 +316,10 @@ main {
     }
 
     .c-nav-link a {
-        float: left;
-    }
-
-    .c-nav-link a {
         font-family: 'Comfortaa', cursive;
         color: white;
         font-size: 16px;
-        padding: 8px 6px;
+        padding: 8px 0px;
     }
     
     .header-profile {
@@ -354,24 +350,6 @@ main {
 }
 
 @media only screen and (max-width: 384px){
-
-    .sticky-nav {
-        left: 8px;
-        display: inline-block;
-        border-top-left-radius: 0 0;
-        border-top-right-radius: 0 0;
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-        background: linear-gradient(to right, var(--color-main), var(--color-mid), var(--color-sec));  
-        transition: 0.24s opacity ease-in-out;
-    }
-
-    .c-nav-link a {
-        font-family: 'Comfortaa', cursive;
-        color: white;
-        font-size: 16px;
-        padding: 8px 6px;
-    }
 
     .project-desc{
         line-height: 1.4em;
