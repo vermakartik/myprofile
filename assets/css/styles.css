@@ -91,10 +91,12 @@ a {
 }
 
 .nav-not-visible{
+    visibility: hidden;
     opacity: 0.0;
 }
 
 .sticky-nav-visible{
+    visibility: visible ;
     opacity: 1.0;
     animation: bounce 1.0s;
 }
@@ -216,14 +218,14 @@ main {
 
 .view-button:hover{
     /* background: #ad1457; */
-    color: #fff176;
+    color: var(--color-sec);
 }
 
 .live-button {
     border: none;
     background: transparent;
     text-transform: uppercase;
-    color: #ec407a;
+    color: var(--color-main);
     font-family: 'roboto', sans-serif;
     text-decoration: none;
 }
@@ -237,11 +239,11 @@ main {
 
 .live-button:hover .arrow-live{
     left: 12px;
-    color: #ad1457;
+    color: var(--color-main);
 }
 
 .live-button:hover{
-    color: #ad1457;
+    color: var(--color-mid);
 }
 
 .live-button-disabled{
