@@ -8,6 +8,7 @@
  html, body {
      margin: 0px !important;
      padding: 0px !important;
+     scroll-behavior: smooth;
  }
 
 .profile-container {
@@ -87,7 +88,12 @@ a {
 }
 
 @keyframes bounce {
-    50% { transform: scale(1.05);}
+    0% { transform: scale(0); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes bounceOut {
+    100% { transform: scale(0); }
 }
 
 .nav-not-visible{
@@ -180,6 +186,52 @@ main {
     overflow: hidden;
     font-weight: 300;
     text-overflow: ellipsis;
+}
+
+
+.scroll-to-top{
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(to top, var(--color-main), var(--color-mid), var(--color-nav));
+    border-radius: 50px;
+    padding: 10px 14px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    transition: color 0.14 ease-in-out;
+}
+
+.scroll-to-top::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: var(--color-main);
+    color: var(--color-sec);
+    z-index: -1;
+    transition: opacity 0.14s ease-in-out;
+}
+
+.scroll-to-top:hover::before {
+    opacity: 1;
+}
+
+.scroll-to-top:hover {
+    color: var(--color-sec);
+}
+
+.scroll-top-visible{
+    visibility: visible;
+    animation: bounce 1.0s;
+}
+
+.scroll-top-not-visible {
+    animation: bounceOut 1.0s;
+    visibility: hidden;
 }
 
 .view-button{
