@@ -177,8 +177,8 @@ main {
 }
 
 .project-desc{
-    font-family: 'roboto', sans-serif;
-    color: black;
+    font-family: var(--font-text);
+    color: #37474f;
     word-wrap: break-word;
     line-height: 1.4em;
     max-height: 4.2em;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 :root {
     --color-main: rgb(115, 71, 209);
     --color-mid: rgb(145, 110, 219);
@@ -5,4 +6,5 @@
     --color-nav: rgb(98, 209, 189);
 
     --background-main: #dfdfdf;
+    --font-text: 'open sans', sans-serif; 
 }
